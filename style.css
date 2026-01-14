@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    set background colour.
+    set font family.
+    set body to be as tall as the screen on which
+    it is rendered.
+*/
+body {
+    background-color:rgb(83, 132, 180);
+    font-family: monospace; 
+    height: 100vh;
+}
+
+/*
+    add a background colour
+    relative position
+    placed 30% from the top
+    border specifications
+    minimum width of 540px and maximum width of 50%
+    main is block: margin: auto
+*/
+main {
+    background-color:aliceblue;
+    position: relative;
+    top: 30%;
+    border: 1px solid;
+    border-radius: 25px;
+    min-width: 540px;
+    max-width: 50%;
+    margin: auto;
+    padding: 2em;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: "Gravitas One", "sans-serif";
+}
+
+/*
+    70% width
+    height: 42px
+    no border
+*/
+#search {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    height: 42px;
+}
+
+/*
+    5em width
+    cursor: pointer
+*/
+#submit {
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 5em;
+    cursor: pointer;
+}
+
+/*
+    flex-direction is column
+    place-items center align
+    #weather-search half width of #weather-wrapper
+    place-items makes children center aligned
+*/
+#weather-wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+}
+
+#weather-search {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#weather-data {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-top: 20px;
+
+    text-align: left;
+    align-items: left;
+    gap: 12px;
+}
+
+#weather-data > img {
+    border-radius: 50%;
+    background-color: lightskyblue;
+}
+
+#weather-data > div > p {
+    padding: 3px;
+}
