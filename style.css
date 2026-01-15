@@ -6,75 +6,66 @@
     box-sizing: border-box;
 }
 
-/*
-    set background colour.
-    set font family.
-    set body to be as tall as the screen on which
-    it is rendered.
-*/
 body {
-    background-color:rgb(83, 132, 180);
-    font-family: monospace; 
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2F8hr60jort3w91.gif&f=1&nofb=1&ipt=d4229c181c695a531cfea64a9afa817b0d7369b22e1037e5a97c514bc7d4bd66');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Times New Roman', Times, serif; 
     height: 100vh;
 }
 
-/*
-    add a background colour
-    relative position
-    placed 30% from the top
-    border specifications
-    minimum width of 540px and maximum width of 50%
-    main is block: margin: auto
-*/
 main {
-    background-color:aliceblue;
+    background-color:rgb(240, 248, 255);
     position: relative;
     top: 30%;
-    border: 1px solid;
     border-radius: 25px;
     min-width: 540px;
-    max-width: 50%;
+    max-width: 25%;
     margin: auto;
     padding: 2em;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
     margin-bottom: 20px;
-    font-family: "Gravitas One", "sans-serif";
+    font-family: "Gravitas One", "Times New Roman", "Times", "serif";
 }
 
-/*
-    70% width
-    height: 42px
-    no border
-*/
 #search {
-    border-radius: 5px 0 0 5px;
-    border: none;
+    border-radius: 5px;
+    border: solid;
     padding: 10px;
+    margin-right: 5px;
     font-size: 16px;
     width: 60%;
     height: 42px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/*
-    5em width
-    cursor: pointer
-*/
+#search:focus {
+    outline: none;
+    border-color:rgb(82, 189, 255);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
 #submit {
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
+    border: aliceblue;
     padding: 10px;
     font-size: 16px;
     width: 5em;
     cursor: pointer;
+
+    background-color:rgb(82, 189, 255);
+    color: black;
+    transition: background-color 0.3s;
 }
 
-/*
-    flex-direction is column
-    place-items center align
-    #weather-search half width of #weather-wrapper
-    place-items makes children center aligned
-*/
+#submit:hover {
+    background-color:rgb(26, 162, 246);
+}
+
 #weather-wrapper {
     display: flex;
     flex-direction: column;
@@ -89,14 +80,23 @@ h1 {
 }
 
 #weather-data {
-    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 5px;
     padding: 1.5em;
     margin-top: 20px;
 
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
     text-align: left;
     align-items: left;
     gap: 12px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#weather-data:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 #weather-data > img {

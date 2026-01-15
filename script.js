@@ -93,7 +93,8 @@ async function fetchWeather() {
         <img 
             src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png"
             alt="${data.weather[0].description}"
-            width="100"
+            width="65"
+            height="65"
         />
         <div>
             <h2>${data.name}</h2>
