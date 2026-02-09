@@ -11,7 +11,9 @@
   <h3 align="center">WeatherApp v1.2026</h3>
 
   <p align="center">
-    A simplistic instance of the OpenWeather API. NOTE: OpenWeather API NOT included.
+    A simplistic instance of the OpenWeather API.
+    <br />
+    <i>NOTE: OpenWeather API token <b>NOT</b> included.</i>
     <br />
     <a href="https://github.com/M4DD7-b/Weather-App-2026/blob/main/index.html">View Demo</a>
     &middot;
