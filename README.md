@@ -3,8 +3,8 @@
     <img 
       src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWgwN3ZjanowcW8zNmNoc2ZkeW51NHJkOXVobDhrc3lucm51MTMyaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RicBcdnIs9BcIxtbha/giphy.gif"
       alt="Cloud GIF"
-      width="350"
-      height="150"
+      width="225"
+      height="210"
       />
   </a>
 
